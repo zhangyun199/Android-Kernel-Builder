@@ -30,6 +30,9 @@ MIUI rom 建议选择 机型代号-Xiaomi_Kernel_OpenSource-sdm845_构建时间.
 如: 小米 MIX3 类原生rom 选择 perseus-NGK_android_kernel_xiaomi_sdm845_********.zip
 
 
+---
+
+
 # 致谢
 
 
