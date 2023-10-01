@@ -1,6 +1,6 @@
 <div align = center>
 
-<img src="./.assets/Xiaomi-sdm845-KSU.png" width="200" height="175" alt="banner">
+<img src="./.assets/DogDayAndroid.png" width="200" height="175" alt="banner">
 
 <h1>小米骁龙845系列构建KernelSU</h1>
 
