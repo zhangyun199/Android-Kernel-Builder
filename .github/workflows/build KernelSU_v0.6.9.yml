@@ -1,4 +1,4 @@
-name: "Build KernelSU_v*.*.*"
+name: "Build KernelSU_v0.6.9"
 
 on:
   # schedule:
