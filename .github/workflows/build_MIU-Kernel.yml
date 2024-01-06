@@ -155,11 +155,7 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
-          cd ${{ env.KERNEL_NAME }}
-          wget https://github.com/wanggm1234/Android-Kernel-Builder/blob/main/LXC-DOCKER-OPEN-CONFIG.sh
-          chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
-          ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
-          
+                    
       - name: "🎶 Build kernel"
         working-directory: ${{ env.KERNEL_NAME }}
         env:
