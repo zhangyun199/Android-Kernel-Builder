@@ -158,7 +158,7 @@ jobs:
           cd $GITHUB_WORKSPACE/kernel_workspace
           wget https://github.com/wanggm1234/Android-Kernel-Builder/blob/main/LXC-DOCKER-OPEN-CONFIG.sh
           chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
-          ./LXC-DOCKER-OPEN-CONFIG.sh android-kernel/arch/arm64/configs/${{ env.KERNEL_CONFIG }} -w
+          ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
           
       - name: "🎶 Build kernel"
         working-directory: ${{ env.KERNEL_NAME }}
