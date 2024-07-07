@@ -84,13 +84,6 @@ jobs:
           chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
           ./LXC-DOCKER-OPEN-CONFIG.sh arch/arm64/configs/${{ env.DEFCONFIG_NAME }} -w
 
-            
-      - name: Setup LXC_PATCH
-        run: |
-          cd ${{ env.WORKSPACE }}/$KERNEL_NAME
-          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc/lxc.patch
-          patch -p0 < lxc.patch
-
       - name: Setup CLOSE ANDROID_PARANOID_NETWORK
         run: |
           cd ${{ env.WORKSPACE }}/$KERNEL_NAME
